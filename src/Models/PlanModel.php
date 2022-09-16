@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PlanModel extends Model
 {
+    protected $connection = 'mysql_his';
     protected $table = 'plans';
     protected $guarded = [];
     protected $fillable = ['name', 'description', 'price', 'currency', 'duration', 'metadata'];
