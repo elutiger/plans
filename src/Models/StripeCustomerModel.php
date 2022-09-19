@@ -4,9 +4,8 @@ namespace Creatydev\Plans\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class StripeCustomerModel extends Model
+class StripeCustomerModel extends Base
 {
-    protected $connection = 'mysql_his';
     protected $table = 'stripe_customers';
     protected $guarded = [];
     protected $fillable = ['model_id', 'model_type', 'customer_id'];

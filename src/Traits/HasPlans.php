@@ -6,7 +6,7 @@ use Carbon\Carbon;
 
 trait HasPlans
 {
-    use CanPayWithStripe;
+    //use CanPayWithStripe;
 
     /**
      * Get Subscriptions relatinship.

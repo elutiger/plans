@@ -6,9 +6,8 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Creatydev\Plans\Exceptions\UnsupportedPaymentMethodException;
 
-class PlanSubscriptionModel extends Model
+class PlanSubscriptionModel extends Base
 {
-    protected $connection = 'mysql_his';
     protected $table = 'plan_subscriptions';
     protected $guarded = [];
     protected $fillable = ['plan_id', 'model_id', 'model_type', 'payment_method', 'is_paid', 'charging_price', 'charging_currency', 'is_recurring', 'recurring_each_days', 'starts_on', 'expires_on', 'cancelled_on'];

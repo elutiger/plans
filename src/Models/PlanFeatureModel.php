@@ -4,9 +4,8 @@ namespace Creatydev\Plans\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PlanFeatureModel extends Model
+class PlanFeatureModel extends Base
 {
-    protected $connection = 'mysql_his';
     protected $table = 'plan_features';
     protected $guarded = [];
     protected $fillable = ['plan_id', 'name', 'code', 'description', 'type', 'limit', 'metadata'];
